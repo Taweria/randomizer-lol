@@ -16,31 +16,32 @@ const splash = computed(() => {
         case 'RenataGlasc':
             cleanedChampionName = 'Renata';
             break;
-        case "Kog'Maw":
+        case "KogMaw":
             cleanedChampionName = 'KogMaw';
             break;
-        case "Kha'Zix":
-            cleanedChampionName = 'Khazix';
+        case "KhaZix":
+        cleanedChampionName = 'Khazix';
             break;
-        case "Vel'Koz":
+        case "VelKoz":
             cleanedChampionName = 'Velkoz';
             break;
-        case "Rek'Sai":
+        case "RekSai":
             cleanedChampionName = 'RekSai';
             break;
         case "LeBlanc":
             cleanedChampionName = 'Leblanc';
             break;
-        case "Bel'veth":
+        case "BelVeth":
             cleanedChampionName = 'Belveth';
             break;
-        case "Kai'Sa":
+        case "KaiSa":
             cleanedChampionName = 'Kaisa';
             break;
-        case "Cho'Gath":
+        case "ChoGath":
             cleanedChampionName = 'Chogath';
             break;
     }
+
 
     return `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${cleanedChampionName}_0.jpg`;
 });
