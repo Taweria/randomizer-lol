@@ -4,9 +4,47 @@ import { computed } from 'vue';
 const props = defineProps(['champion']);
 
 const splash = computed(() => {
-    const cleanedChampionName = props.champion.name.replace(/\s+/g, '').replace(/'/g, '').replace(/\./g, '');
+    let cleanedChampionName = props.champion.name.replace(/\s+/g, '').replace(/'/g, '').replace(/\./g, '');
+
+    switch (cleanedChampionName) {
+        case 'Wukong':
+            cleanedChampionName = 'MonkeyKing';
+            break;
+        case 'Nunu&Willump':
+            cleanedChampionName = 'Nunu';
+            break;
+        case 'RenataGlasc':
+            cleanedChampionName = 'Renata';
+            break;
+        case "Kog'Maw":
+            cleanedChampionName = 'KogMaw';
+            break;
+        case "Kha'Zix":
+            cleanedChampionName = 'Khazix';
+            break;
+        case "Vel'Koz":
+            cleanedChampionName = 'Velkoz';
+            break;
+        case "Rek'Sai":
+            cleanedChampionName = 'RekSai';
+            break;
+        case "LeBlanc":
+            cleanedChampionName = 'Leblanc';
+            break;
+        case "Bel'veth":
+            cleanedChampionName = 'Belveth';
+            break;
+        case "Kai'Sa":
+            cleanedChampionName = 'Kaisa';
+            break;
+        case "Cho'Gath":
+            cleanedChampionName = 'Chogath';
+            break;
+    }
+
     return `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${cleanedChampionName}_0.jpg`;
 });
+
 
 </script>
 
