@@ -71,7 +71,7 @@ h2{
     color: #fff;
     font-size: 2rem;
     font-weight: 400;
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
     text-transform: uppercase;
     /* text-shadow: 0 0 10px #e3df67; */
