@@ -6,7 +6,7 @@ const champions = ref([]);
 const randomChamp = ref(null);
 
 const getRandomChamp = async () => {
-    const response = fetch('https://ddragon.leagueoflegends.com/cdn/13.24.1/data/en_US/champion.json')
+    const response = fetch('https://ddragon.leagueoflegends.com/cdn/14.2.1/data/en_US/champion.json')
         .then(response => response.json())
         
     const data = await response;
